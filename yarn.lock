@@ -12499,9 +12499,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vision-camera-v3-barcode-scanner@workspace:.":
+"vision-camera-barcode-scanner-rnvcv3@workspace:.":
   version: 0.0.0-use.local
-  resolution: "vision-camera-v3-barcode-scanner@workspace:."
+  resolution: "vision-camera-barcode-scanner-rnvcv3@workspace:."
   dependencies:
     "@commitlint/config-conventional": ^17.6.7
     "@react-native-community/eslint-config": ^3.2.0
