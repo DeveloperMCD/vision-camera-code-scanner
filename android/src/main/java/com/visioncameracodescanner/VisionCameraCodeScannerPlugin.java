@@ -15,7 +15,6 @@ import android.media.Image;
 
 import com.mrousavy.camera.frameprocessor.Frame;
 import com.mrousavy.camera.frameprocessor.FrameProcessorPlugin;
-import com.mrousavy.camera.parsers.Orientation;
 
 import androidx.annotation.NonNull;
 import org.jetbrains.annotations.Nullable;
@@ -67,7 +66,7 @@ public class VisionCameraCodeScannerPlugin extends FrameProcessorPlugin {
     Image mediaImage = frame.getImage();
     if (mediaImage != null) {
       ArrayList<Task<List<Barcode>>> tasks = new ArrayList<Task<List<Barcode>>>();
-      InputImage image = InputImage.fromMediaImage(mediaImage, Orientation.Companion.fromUnionValue(frame.getOrientation()).toDegrees());
+      InputImage image = InputImage.fromMediaImage(mediaImage, frame.getOrientation().toDegrees());
 
       if (params != null && params.containsKey("checkInverted")) {
         boolean checkInverted = (Boolean) params.get("checkInverted");

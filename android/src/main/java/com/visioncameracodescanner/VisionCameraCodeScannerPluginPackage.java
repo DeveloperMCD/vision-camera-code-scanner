@@ -17,7 +17,7 @@ public class VisionCameraCodeScannerPluginPackage implements ReactPackage {
   @NonNull
   @Override
   public List<NativeModule> createNativeModules(@NonNull ReactApplicationContext reactContext) {
-    FrameProcessorPluginRegistry.addFrameProcessorPlugin("scanCodes", options -> new VisionCameraCodeScannerPlugin());
+    FrameProcessorPluginRegistry.addFrameProcessorPlugin("scanCodes", (proxy, options) -> new VisionCameraCodeScannerPlugin());
     return Collections.emptyList();
   }
 
