@@ -11,7 +11,7 @@ export default function App() {
     BarcodeFormat.QR_CODE,
   ]);
   const devices = useCameraDevices();
-  const device = devices.back;
+  const device = devices.at(-1);
 
   React.useEffect(() => {
     (async () => {
