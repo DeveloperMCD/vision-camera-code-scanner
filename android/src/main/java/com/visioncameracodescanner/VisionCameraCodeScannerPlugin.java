@@ -66,7 +66,12 @@ public class VisionCameraCodeScannerPlugin extends FrameProcessorPlugin {
     Image mediaImage = frame.getImage();
     if (mediaImage != null) {
       ArrayList<Task<List<Barcode>>> tasks = new ArrayList<Task<List<Barcode>>>();
-      InputImage image = InputImage.fromMediaImage(mediaImage, frame.getOrientation().toDegrees());
+      InputImage image = null;
+      try {
+        image = InputImage.fromMediaImage(mediaImage, frame.getOrientation().toDegrees());
+      } catch (FrameInvalidError e) {
+        throw new RuntimeException(e);
+      }
 
       if (params != null && params.containsKey("checkInverted")) {
         boolean checkInverted = (Boolean) params.get("checkInverted");
