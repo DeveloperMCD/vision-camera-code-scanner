@@ -7,11 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		214AF74C2A0A098B000437BC /* VisionCameraCodeScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 214AF74B2A0A098B000437BC /* VisionCameraCodeScanner.m */; };
+		12C9F6562B90E86E0056A118 /* VisionCameraScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C9F6552B90E86E0056A118 /* VisionCameraScanner.swift */; };
 		F4FF95D7245B92E800C19C63 /* VisionCameraCodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /* VisionCameraCodeScanner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		12C9F6512B90E86E0056A118 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		58B511D91A9E6C8500147676 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -24,14 +33,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		12C9F6532B90E86E0056A118 /* libVisionCameraScanner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVisionCameraScanner.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		12C9F6552B90E86E0056A118 /* VisionCameraScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionCameraScanner.swift; sourceTree = "<group>"; };
 		134814201AA4EA6300B7C361 /* libVisionCameraCodeScanner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVisionCameraCodeScanner.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		214AF74A2A0A094F000437BC /* VisionCameraCodeScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisionCameraCodeScanner.h; sourceTree = "<group>"; };
-		214AF74B2A0A098B000437BC /* VisionCameraCodeScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisionCameraCodeScanner.m; sourceTree = "<group>"; };
+		B3E7B5891CC2AC0600A0062D /* VisionCameraCodeScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisionCameraCodeScanner.m; sourceTree = "<group>"; };
 		F4FF95D5245B92E700C19C63 /* VisionCameraCodeScanner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VisionCameraCodeScanner-Bridging-Header.h"; sourceTree = "<group>"; };
 		F4FF95D6245B92E800C19C63 /* VisionCameraCodeScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionCameraCodeScanner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		12C9F6502B90E86E0056A118 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		58B511D81A9E6C8500147676 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -42,6 +59,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12C9F6542B90E86E0056A118 /* VisionCameraScanner */ = {
+			isa = PBXGroup;
+			children = (
+				12C9F6552B90E86E0056A118 /* VisionCameraScanner.swift */,
+			);
+			path = VisionCameraScanner;
+			sourceTree = "<group>";
+		};
 		134814211AA4EA7D00B7C361 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -53,17 +78,35 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				214AF74B2A0A098B000437BC /* VisionCameraCodeScanner.m */,
-				214AF74A2A0A094F000437BC /* VisionCameraCodeScanner.h */,
 				F4FF95D6245B92E800C19C63 /* VisionCameraCodeScanner.swift */,
+				B3E7B5891CC2AC0600A0062D /* VisionCameraCodeScanner.m */,
 				F4FF95D5245B92E700C19C63 /* VisionCameraCodeScanner-Bridging-Header.h */,
+				12C9F6542B90E86E0056A118 /* VisionCameraScanner */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				12C9F6532B90E86E0056A118 /* libVisionCameraScanner.a */,
 			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		12C9F6522B90E86E0056A118 /* VisionCameraScanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12C9F6572B90E86E0056A118 /* Build configuration list for PBXNativeTarget "VisionCameraScanner" */;
+			buildPhases = (
+				12C9F64F2B90E86E0056A118 /* Sources */,
+				12C9F6502B90E86E0056A118 /* Frameworks */,
+				12C9F6512B90E86E0056A118 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VisionCameraScanner;
+			productName = VisionCameraScanner;
+			productReference = 12C9F6532B90E86E0056A118 /* libVisionCameraScanner.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		58B511DA1A9E6C8500147676 /* VisionCameraCodeScanner */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "VisionCameraCodeScanner" */;
@@ -87,9 +130,14 @@
 		58B511D31A9E6C8500147676 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
+					12C9F6522B90E86E0056A118 = {
+						CreatedOnToolsVersion = 15.2;
+						ProvisioningStyle = Automatic;
+					};
 					58B511DA1A9E6C8500147676 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -109,16 +157,24 @@
 			projectRoot = "";
 			targets = (
 				58B511DA1A9E6C8500147676 /* VisionCameraCodeScanner */,
+				12C9F6522B90E86E0056A118 /* VisionCameraScanner */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		12C9F64F2B90E86E0056A118 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12C9F6562B90E86E0056A118 /* VisionCameraScanner.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		58B511D71A9E6C8500147676 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				214AF74C2A0A098B000437BC /* VisionCameraCodeScanner.m in Sources */,
 				F4FF95D7245B92E800C19C63 /* VisionCameraCodeScanner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,6 +182,67 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		12C9F6582B90E86E0056A118 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		12C9F6592B90E86E0056A118 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		58B511ED1A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -233,7 +350,6 @@
 				PRODUCT_NAME = VisionCameraCodeScanner;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "VisionCameraCodeScanner-Bridging-Header.h";
-				SWIFT_OBJC_INTERFACE_HEADER_NAME = "VisionCameraCodeScanner-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -253,7 +369,6 @@
 				PRODUCT_NAME = VisionCameraCodeScanner;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "VisionCameraCodeScanner-Bridging-Header.h";
-				SWIFT_OBJC_INTERFACE_HEADER_NAME = "VisionCameraCodeScanner-Swift.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -261,6 +376,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		12C9F6572B90E86E0056A118 /* Build configuration list for PBXNativeTarget "VisionCameraScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12C9F6582B90E86E0056A118 /* Debug */,
+				12C9F6592B90E86E0056A118 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "VisionCameraCodeScanner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

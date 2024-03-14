@@ -1,19 +1,6 @@
-#import <Foundation/Foundation.h>
+#import <VisionCamera/FrameProcessorPlugin.h>
+#import <VisionCamera/FrameProcessorPluginRegistry.h>
 
-#import "VisionCameraCodeScanner.h"
-#if defined __has_include && __has_include("VisionCameraCodeScanner-Swift.h")
-#import "VisionCameraCodeScanner-Swift.h"
-#else
-#import <VisionCameraCodeScanner/VisionCameraCodeScanner-Swift.h>
-#endif
+#import "VisionCameraV3BarcodeScanner-Swift.h"
 
-@implementation RegisterPlugins
-
-    + (void) load {
-        [FrameProcessorPluginRegistry addFrameProcessorPlugin:@"scanCodes"
-                                              withInitializer:^FrameProcessorPlugin*(NSDictionary* options) {
-            return [[VisionCameraCodeScanner alloc] init];
-        }];
-    }
-
-@end
+VISION_EXPORT_SWIFT_FRAME_PROCESSOR(VisionCameraCodeScanner, scanCodes)
